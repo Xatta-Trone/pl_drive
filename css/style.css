@@ -15,6 +15,7 @@ a:hover{
 }
 .lightheader{
 	background: #fff;
+	transition: all 0.3s linear;
 	
 }
 nav.lightheader a.navbar-brand, nav.lightheader #navbarResponsive > ul >li>a{
@@ -43,7 +44,7 @@ nav.lightheader a.navbar-brand, nav.lightheader #navbarResponsive > ul >li>a{
     border-bottom: 4px solid transparent;
     transition: all 0.5s;
 }
-ul.navbar-nav li:hover a {
+ul.navbar-nav li:hover a, ul.navbar-nav li a.active {
     border-top: 4px solid #2ecc71;
     border-bottom: 4px solid #2ecc71;
   
@@ -370,4 +371,64 @@ input.header-input:focus .haeder-form{
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+
+/* User Profile area*/
+
+.user-profile-area{
+    
+    color: rgba(255,255,255,0.9);
+    background: url("../img/sp_main_bg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: rgba(46, 204, 113,0.7);
+}
+.user-profile-area {
+   /* background: #000 none repeat scroll 0 0;*/
+    height: 300px;
+}
+.user-image {
+   
+    border: 5px solid #2ecc71;
+    border-radius: 50%;
+    display: inline-block;
+    height: 150px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+
+}
+
+
+.user-nav, .user-details {
+    width: 100%;
+    
+}
+.user-nav{
+    margin-bottom: 30px;
+}
+
+.nav-pills .nav-link.active{
+    background: #2ecc71;
+}
+
+.user-details-area{
+    padding: 30px 0px;
+}
+
+
+.tab-content {
+    background: #2ecc71 none repeat scroll 0 0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.table{
+    margin-bottom: 0px;
+    color: #000;
+}
+.table tr:last-child{
+    border-bottom: 1px solid #fff;
 }
