@@ -207,7 +207,7 @@ input.header-input:focus .haeder-form{
     padding: 5px 20px;
 }
 
-.recent-docs{
+.recent-docs, .single-pdf-section-padding, .section-padding, .login-register-area{
 	background-image: url("../img/bg theme.png");
 	background-color: rgba(46, 204, 113,0.8);
 	background-repeat: repeat;
@@ -441,10 +441,7 @@ input.header-input:focus .haeder-form{
 
 
 .login-register-area{
-    padding-bottom: 50px;
-    padding-top: 100px;
-    
-    display: block;
+   padding: 100px 0;
 }
 
 .lr-submit-reg {
@@ -460,7 +457,6 @@ input.header-input:focus .haeder-form{
 
 
 .section-padding {
-    background: #333 none repeat scroll 0 0;
     padding: 80px 0;
 }
 .contact-header h2 {
@@ -485,14 +481,14 @@ input.header-input:focus .haeder-form{
     margin: 5px 0;
 }
 .contact-meta span i.fa {
-    color: #2ecc71;
+    color: #fff;
     font-size: 25px;
     padding-right: 15px;
 }
 
 
 .contact-input {
-    border: 5px solid #2ecc71;
+    border: 5px solid #888;
     display: block;
     font-size: 18px;
     margin: 15px auto;
@@ -501,7 +497,7 @@ input.header-input:focus .haeder-form{
 }
 .contact-submit-btn {
     background: #fff none repeat scroll 0 0;
-    border: 2px solid #2ecc71;
+    border: 2px solid #888;
     color: #2ecc71;
     font-size: 30px;
     padding: 2px 30px;
@@ -511,7 +507,7 @@ input.header-input:focus .haeder-form{
 
 
 .section-title h2 {
-    color: #2ecc71;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -519,3 +515,117 @@ input.header-input:focus .haeder-form{
     text-shadow: 0 0 2px #fff;
 }
 
+
+
+.card {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+    margin: 10px auto;
+}
+.single-collapse{
+    padding: 10px;
+}
+.card h5 a {
+    display: block;
+    padding: 10px;
+}
+.recent-pdf-all .card-header {
+    padding: 0;
+    border-bottom: 1px solid #fff;
+}
+.card h5 a:hover {
+    text-decoration: none;
+}
+.card h5 a i.fa {
+    float: right;
+    display: none;
+}
+
+
+.recent-pdf-all .card-header a[aria-expanded="false"] .fa-angle-down {
+    display: block;
+}
+.recent-pdf-all .card-header a[aria-expanded="true"] .fa-angle-up {
+    display: block;
+}
+
+
+.single-pdf-item {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: #22b14c;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.single-pdf-item:hover{
+    color: #333;
+}
+
+
+
+.single-pdf-item > span {
+    font-size: 18px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*singlr pdf itm=em*/
+
+
+.single-pdf-section-padding {
+    padding: 100px 0;
+}
+.pdf-prview-image {
+    background: #fff none repeat scroll 0 0;
+    height: 400px;
+}
+.pdf-title h3 {
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.pdf-meta .fa {
+    color: #fff;
+    font-size: 25px;
+    padding: 0 15px;
+}
+.pdf-meta {
+    margin-top: 15px;
+}
+.pdf-meta p {
+    font-weight: bold;
+}
+.pdf-download {
+    margin: 20px auto;
+}
+.pdf-dwn-btn {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #22b14c;
+    transition: 0.2s;
+}
+.pdf-dwn-btn .fa {
+    padding-right: 5px;
+}
+.pdf-dwn-btn:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+.pdf-front-page{
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
