@@ -32,7 +32,7 @@ goto your phpMyAdmin and create a database
 ```
 ### Login and Register
 
-* Now you can login with email `admin@admin.com` and password `1234`.
+* Now you can login with email `admin@admin.com` and password `admin`.
 
 
 ## Version Releases
