@@ -1,0 +1,144 @@
+/* Medium Layout: 1280px.
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+Tablet Layout: 768px.
+@media only screen and (min-width: 768px) and (max-width: 991px) {  
+	
+}
+Mobile Layout: 320px.
+@media only screen and (max-width: 767px) { 
+ 
+    
+}
+Wide Mobile Layout: 480px.
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+} */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+	.xt-header-content > h1 {
+	    font-size: 35px;
+	}
+	.process-data{
+		margin: 10px 0;
+		padding: 10px 0;
+	}
+	.process-data i {
+    	font-size: 40px;
+	}
+	.process-data h2 {
+    	font-size: 20px;
+	}
+	.process-data span {
+	    font-size: 25px;
+	}
+	.newsletter-section h2 {
+	    font-size: 22px;
+	}
+	.form-group > input[type="submit"]{
+		margin: 2px auto;
+	}
+	.form-group > input[type="text"]{
+		width: 100%;
+	}
+	.doc-wrapper{
+		margin-bottom: 20px;
+	}
+	.contact-meta {
+	    margin-bottom: 30px;
+	}
+	.pdf-front-page{
+		width: 100%;
+	}
+	.pdf-title {
+	    margin-top: 15px;
+	}
+	.pdf-meta p {
+	    display: inline-block;
+	    width: 50%;
+	    float: left;
+	}
+	form.haeder-form.search input.header-input{
+		width: 85%;
+	}
+	.search-result > span{
+		font-size: 16px;
+	}
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+	.xt-header-content > h1 {
+	    font-size: 55px;
+	}
+	.process-data i {
+    	font-size: 55px;
+	}
+	.process-data h2 {
+    	font-size: 30px;
+	}
+	.process-data span {
+	    font-size: 25px;
+	}
+	.newsletter-section,.newsletter-section .float-right {
+	    text-align: center;
+	}
+	.contact-meta {
+	    margin-bottom: 20px;
+	}
+	.pdf-meta p {
+	    display: inline-block;
+	    width: 32.33%;
+	}
+	form.haeder-form.search input.header-input{
+		width: 90%;
+	}
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+	.xt-header-content > h1 {
+	    font-size: 60px;
+	}
+	.form-group > input[type="text"]{
+		width: 65%;
+	}
+	.form-group > input[type="submit"]{
+		display: inline-block;
+		width: 30%;
+	}
+	.newsletter-section h2 {
+	    font-size: 22px;
+	    line-height: 46px;
+	}
+	.doc-stat {
+    font-size: 15px;
+	}
+	.single-footer-item .form-group > input[type="submit"]{
+		width: 100%;
+	}
+	.login-form .form-group input[type='text'], .register-area .form-group input[type='text']{
+		width: 100%;
+	}
+	.user-nav span.fa {
+	    display: none;
+	}
+	.pdf-front-page{
+		width: 100%;
+	}
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+	.pdf-front-page{
+		width: auto;
+	}
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
