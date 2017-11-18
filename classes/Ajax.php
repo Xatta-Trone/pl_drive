@@ -214,10 +214,10 @@ class Ajax{
 		
 	}
 
-	public function downloadCount($pdfId,$userId){
-		$result = $this->pdf->pdfDownloadCount($pdfId,$userId);
+	/*public function downloadCount($pdfId,$userId){
+		$result = self::pdfDownloadCount($pdfId,$userId);
 		return $result;
-	}
+	}*/
 
 	public function searchResult($dataquery){
 		$query = "SELECT pdf.*, sub.subName, sub.subCode, user.name FROM table_pdf as pdf 
@@ -241,6 +241,25 @@ class Ajax{
 		$returnData .= '</ul></div>';
 
 		echo $returnData;
+	}
+
+	public function downloadCount($pdfId,$userId){
+		$query = "SELECT * FROM table_pdf WHERE id='$pdfId'";
+		//$userId = Session::get('userId');
+
+		$this->pdf->activity($userId,'2',$pdfId);
+		$this->pdf->pdfDownloadedBY($userId,$pdfId);
+
+		$downloadresult = $this->db->select($query);
+		if ($downloadresult) {
+			while ($downloadCount = $downloadresult->fetch_assoc()) {
+				$download = $downloadCount['download'] + 1;
+
+		$updateQuery = "UPDATE `table_pdf` SET `download`='$download' WHERE `id`='$pdfId'";
+		$result  =$this->db->update($updateQuery);
+		return $download;
+			}
+		}
 	}
 
 
