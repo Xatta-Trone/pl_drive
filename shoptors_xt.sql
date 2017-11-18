@@ -307,7 +307,7 @@ CREATE TABLE `user_list` (
 
 LOCK TABLES `user_list` WRITE;
 /*!40000 ALTER TABLE `user_list` DISABLE KEYS */;
-INSERT INTO `user_list` (`id`, `studentId`, `name`, `email`, `password`, `isAdmin`, `joinDate`) VALUES (1,1404000,'admin','admin@admin.com','21232f297a57a5a743894a0e4a801fc3',1,'2017-11-18 12:38:26'),(2,1404143,'Hasibul rahman','hasibr@gmail.com','81dc9bdb52d04dc20036dbd8313ed055',1,'2017-11-18 12:42:15'),(3,1404131,'AB','ab@gmail.com','81dc9bdb52d04dc20036dbd8313ed055',0,'2017-11-18 12:56:15'),(4,1404140,'Mehedi','mehedi@gmail.com','a7fb67869ea1cde2f0a813198dac8ae2',0,'2017-11-18 13:15:11'),(5,1404200,'sabina','sabina@gmail.com','2f4158193931d49422753a02c9a7a56e',0,'2017-11-18 13:31:58');
+INSERT INTO `user_list` (`id`, `studentId`, `name`, `email`, `password`, `isAdmin`, `joinDate`) VALUES (1,1404000,'admin','admin@admin.com','21232f297a57a5a743894a0e4a801fc3',1,'2017-11-18 12:38:26');
 /*!40000 ALTER TABLE `user_list` ENABLE KEYS */;
 UNLOCK TABLES;
 
